@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title>多边形游戏</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <!--
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous' />
+        -->
+    </head>
+    
+    <body>
+        <header>
+            <h1>多边形游戏</h1>
+        </header>
+
+        <div id="main">
+            <!--左侧-->
+            <div id="left">
+                <div id="game-describe">
+                    <div id="game-describe-title">
+                        <ul>
+                            <li>新游戏</li>
+                            <li>自定义游戏</li>
+                        </ul>
+                    </div>
+                    <div id="game-describe-detail1">
+                        <ul>
+                            <li>顶点数量：随机</li>
+                            <li>顶点取值：随机</li>
+                            <li>边运算符：随机</li>
+                        </ul>
+                    </div>
+                    <div id="game-design">
+                        <div id="vert-num">
+                            顶点数量：
+                            <select>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>        
+                        <div id="vert-value">
+                            顶点取值：
+                            <span id="vValue-set">设置</span>
+                            <div id="background1">
+                                <div class="set-div">
+                                    <div class="set-title">
+                                        <span>x</span>
+                                        <h2>顶点取值设置</h2>
+                                    </div>
+                                    <div class="set-detail">
+                                        <form>
+                                            <label>顶点1：<input type="text" value="1"></label>
+                                            <label>顶点2：<input type="text" value="1"></label><br>
+                                            <label>顶点3：<input type="text" value="1"></label>
+                                            <label>顶点4：<input type="text" value="1"></label><br>
+                                            <label>顶点5：<input type="text" value="1"></label>
+                                            <label>顶点6：<input type="text" value="1"></label><br>
+                                            <label>顶点7：<input type="text" value="1"></label>
+                                            <label>顶点8：<input type="text" value="1"></label><br>
+                                            <label>顶点9：<input type="text" value="1"></label>
+                                            <label>顶点10：<input type="text" value="1"></label><br>
+                                        </form>
+                                        <li>确认</li>
+                                        <li>取消</li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>      
+                        <div id="edge-value">
+                            边运算符：
+                            <span id="eValue-set">设置</span>
+                            <div id="background2">
+                                <div class="set-div">
+                                    <div class="set-title">
+                                        <span>x</span>
+                                        <h2>边运算符设置</h2>
+                                    </div>
+                                    <div class="set-detail">
+                                        <form>
+                                            <label>边1：
+                                                <select>
+                                                    <option value="+">+</option>
+                                                    <option value="x">x</option>
+                                                </select>
+                                            </label>
+                                            <label>边2：
+                                                <select>
+                                                    <option value="+">+</option>
+                                                    <option value="x">x</option>
+                                                </select>
+                                            </label><br>
+                                            <label>边3：
+                                                <select>
+                                                    <option value="+">+</option>
+                                                    <option value="x">x</option>
+                                                </select>
+                                            </label>
+                                            <label>边4：
+                                                <select>
+                                                    <option value="+">+</option>
+                                                    <option value="x">x</option>
+                                                </select>
+                                            </label><br>
+                                            <label>边5：
+                                                <select>
+                                                    <option value="+">+</option>
+                                                    <option value="x">x</option>
+                                                </select>
+                                            </label>
+                                            <label>边6：
+                                                <select>
+                                                    <option value="+">+</option>
+                                                    <option value="x">x</option>
+                                                </select>
+                                            </label><br>
+                                            <label>边7：
+                                                <select>
+                                                    <option value="+">+</option>
+                                                    <option value="x">x</option>
+                                                </select>
+                                            </label>
+                                            <label>边8：
+                                                <select>
+                                                    <option value="+">+</option>
+                                                    <option value="x">x</option>
+                                                </select>
+                                            </label><br>
+                                            <label>边9：
+                                                <select>
+                                                    <option value="+">+</option>
+                                                    <option value="x">x</option>
+                                                </select>
+                                            </label>
+                                            <label>边10：
+                                                <select>
+                                                    <option value="+">+</option>
+                                                    <option value="x">x</option>
+                                                </select>
+                                            </label><br>
+                                        </form>
+                                        <li>确认</li>
+                                        <li>取消</li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>          
+                    </div>
+                </div>
+                <div id="game-start-end">
+                    <ul>
+                        <li>开始游戏</li>
+                        <li>结束游戏</li>
+                    </ul>
+                </div>
+                <div id="game-control">
+                    <ul>
+                        <li>撤销</li>
+                        <li>提示</li>
+                    </ul>
+                </div>
+            </div>
+            <!--左侧结束-->
+
+            <!--右侧-->
+            <div id="right">
+                <div id="game-panel">
+                    <canvas id="canvas">
+                        Your browser does not support the canvas element.
+                    </canvas>
+                </div>
+                <div id="game-hint">
+                    <!--
+                    <div id="arrow">
+                        <div id="arrow-left">←</div>
+                        <div id="arrow-right">→</div> 
+                    </div>
+                    -->
+                    <div id="best-way">最佳方案</div>
+                </div>
+            </div>
+            <!--右侧结束-->
+            <div id="background3">
+                <div class="res-div">
+                    <div class="res-title">
+                        <span>x</span>
+                        <h2>最佳路径</h2>
+                    </div>
+                    <div class="res-detail">
+                        <p>中华人民共和国万岁！</p>
+                        <li>确定</li>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/game.js"></script>
+    </body>
+</html>

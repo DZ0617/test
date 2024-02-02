@@ -1,0 +1,474 @@
+body {
+    background: #ffffff url('../img/geometry2.png');
+}
+
+header {
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+
+header h1 {
+    font-weight: 400;
+    font-size: 42px;
+    color: #757575;
+}
+
+#main {
+    width: 1180px;
+    height: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: #fff;
+    border: #757575 5px solid;
+    border-radius: 12px;
+    box-shadow: 0 10px 10px 0 rgba(46, 61, 73, 0.5);
+}
+
+#main #left {
+    box-sizing: border-box;
+    float: left;
+    height: 100%;
+    width: 30%;
+    border-right: #757575 5px solid;
+}
+
+#main #left #game-describe {
+    box-sizing: border-box;
+    /*height: 80%;*/
+    width: 100%;
+    /*border-bottom: #757575 5px solid;*/
+    padding: 20px 30px;
+}
+
+#main #left #game-describe #game-describe-title {
+    height: 50px;
+    box-sizing: border-box;
+}
+
+#main #left #game-describe #game-describe-title ul li {
+    display: block;
+    box-sizing: border-box;
+    width: 48%;
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    border: #757575 5px solid;
+    border-radius: 12px;
+    font-size: 20px;
+    color: #757575;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#main #left #game-describe #game-describe-title ul li:nth-child(1) {
+    float: left;
+    color: #fff;
+    background: #757575;
+}
+
+#main #left #game-describe #game-describe-title ul li:nth-child(2) {
+    float: right;
+}
+
+#main #left #game-describe #game-describe-detail1 {
+    display: block;
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+
+#main #left #game-describe #game-describe-detail1 ul li {
+    display: block;
+    box-sizing: border-box;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    color: #757575;
+}
+
+#main #left #game-describe #game-design {
+    display: none;
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+
+#main #left #game-describe #game-design div {
+    font-size: 20px;
+    color: #757575;
+    height: 50px;
+    line-height: 50px;
+}
+
+#main #left #game-describe #game-design div select {
+    font-size: 20px;
+    color: #757575;
+    border: #757575 2px solid;
+    border-radius: 4px;
+}
+
+#main #left #game-describe #game-design #vert-value #vValue-set {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    border: #757575 2px solid;
+    color: #757575;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    height: 30px;
+    width: 50px;
+    line-height: 30px;
+}
+
+#main #left #game-describe #game-design #vert-value #vValue-set:hover {
+    color: #fff;
+    background: #757575;
+}
+
+#main #left #game-describe #game-design #vert-value #background1 {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#main #left #game-describe #game-design #edge-value #background2 {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+#main #left #game-describe #game-design #vert-value #background1 .set-div {
+    background: #fff;
+    width: 60%;
+    height: 70%;
+    z-index: 1;
+    margin: 5% auto;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+#main #left #game-describe #game-design #edge-value #background2 .set-div {
+    background: #fff;
+    width: 60%;
+    height: 70%;
+    z-index: 1;
+    margin: 5% auto;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+.set-div .set-title span {
+    display: block;
+    cursor: pointer;
+    float: right;
+    padding-right: 15px;
+}
+
+.set-div .set-title span:hover {
+    color: red;
+}
+
+.set-div .set-title h2 {
+    width: 80%;
+    text-align: center;
+    float: left;
+    padding: 12px;
+}
+
+.set-div .set-detail {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.set-div .set-detail form label {
+    line-height: 60px;
+    padding-right: 40px;
+}
+
+.set-div .set-detail form label input {
+    width: 100px;
+    height: 25px;
+    border: #757575 2px solid;
+    border-radius: 2px;
+    font-size: 20px;
+    text-indent: 10px;
+}
+
+.set-div .set-detail form select {
+    width: 60px;
+}
+
+.set-div .set-detail li {
+    display: block;
+    float: left;
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 20px 60px;
+    border: #757575 2px solid;
+    color: #757575;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.set-div .set-detail li:hover {
+    color: #fff;
+    background: #757575;
+}
+
+#background3 {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.res-div {
+    background: #fff;
+    width: 40%;
+    height: 50%;
+    z-index: 1;
+    margin: 10% auto;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+.res-div .res-title span {
+    display: block;
+    cursor: pointer;
+    float: right;
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.res-div .res-title span:hover {
+    color: red;
+}
+
+.res-div .res-title h2 {
+    width: 80%;
+    text-align: center;
+    display: block;
+    float: left;
+    padding: 12px;
+    font-size: 30px;
+}
+
+.res-div .res-detail {
+    width: 65%;
+    margin: 20px auto 20px;
+}
+
+.res-div .res-detail p {
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.res-div .res-detail li {
+    margin: 50px auto;
+    font-size: 20px;
+    display: block;
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: #757575 2px solid;
+    color: #757575;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.res-div .res-detail li:hover {
+    color: #fff;
+    background: #757575;
+}
+
+#main #left #game-describe #game-design #edge-value #eValue-set {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    border: #757575 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    height: 30px;
+    width: 50px;
+    line-height: 30px;
+}
+
+#main #left #game-describe #game-design #edge-value #eValue-set:hover {
+    color: #fff;
+    background: #757575;
+}
+
+#main #left #game-start-end {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 30px;
+}
+#main #left #game-control {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    margin-top :15px;
+}
+#main #left #game-control ul li {
+    display: block;
+    box-sizing: border-box;
+    width: 48%;
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    border: #757575 5px solid;
+    border-radius: 12px;
+    font-size: 20px;
+    color: #757575;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#main #left #game-control ul li:hover {
+    color: #fff;
+    background: #757575;
+}
+
+#main #left #game-control ul li:nth-child(1) {
+    float: left;
+}
+
+#main #left #game-control ul li:nth-child(2) {
+    float: right;
+}
+
+#main #left #game-start-end ul li {
+    display: block;
+    box-sizing: border-box;
+    width: 48%;
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    border: #757575 5px solid;
+    border-radius: 12px;
+    font-size: 20px;
+    color: #757575;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#main #left #game-start-end ul li:hover {
+    color: #fff;
+    background: #757575;
+}
+
+#main #left #game-start-end ul li:nth-child(1) {
+    float: left;
+}
+
+#main #left #game-start-end ul li:nth-child(2) {
+    float: right;
+}
+
+#main #right {
+    float: right;
+    width: 70%;
+    height: 100%;
+}
+
+#main #right #game-panel {
+    height: 85%;
+    width: 100%;
+}
+
+#main #right #game-hint {
+    height: 15%;
+    width: 100%;
+}
+
+#main #right #game-hint #arrow {
+    box-sizing: border-box;
+    width: 60%;
+    height: 100%;
+    padding: 9px 20px;
+    float: left;
+}
+
+#main #right #game-hint #arrow i {
+    font-size: 50px;
+    color: #757575;
+}
+
+#main #right #game-hint #arrow div {
+    width: 50px;
+    height: 50px;
+    margin: auto 0;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 35px;
+    font-weight: bold;
+    color: #757575;
+    border: #757575 5px solid;
+    border-radius: 50%;
+    
+}
+
+#main #right #game-hint #arrow div:hover {
+    color: #fff;
+    background: #757575;
+}
+
+#main #right #game-hint #arrow #arrow-left {
+    float: left;
+    margin: 0 90px;
+}
+
+#main #right #game-hint #arrow #arrow-right {
+    float: left;
+}
+
+#main #right #game-hint #best-way {
+    display: block;
+    box-sizing: border-box;
+    float: right;
+    width: 138px;
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    border: #757575 5px solid;
+    border-radius: 12px;
+    font-size: 20px;
+    color: #757575;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-top: 9px;
+    margin-right: 80px;
+}
+
+#main #right #game-hint #best-way:hover {
+    color: #fff;
+    background: #757575;
+}
+
+#main #right #game-panel #canvas {
+    width: 700px;
+    height: 450px;
+    margin: 25px 50px;
+    /*box-sizing: border-box;*/
+    border: #757575 5px solid;
+    border-radius: 12px;
+}
